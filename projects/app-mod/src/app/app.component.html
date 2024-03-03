@@ -1,2 +1,6 @@
-<ngx-animated-menu [configData]="configData" [menuData]="menuData"></ngx-animated-menu>
+<ngx-animated-menu
+  (menuEmitData)="getEmitData($event)"
+  [configData]="configData"
+  [menuData]="menuData"
+></ngx-animated-menu>
 <!-- <i class="gg-home"></i> -->

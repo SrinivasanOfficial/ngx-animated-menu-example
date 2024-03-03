@@ -9,15 +9,19 @@ export class AppComponent {
   title = 'AppMod';
 
   configData = {
-    menuColor : '#d523c8'
+    menuColor: '#d523c8'
   }
 
   menuData = [
-    { content: 'Home', value: 'Home' },
-    { content: 'About', value: 'About' },
-    { content: 'Service', value: 'Service' },
-    { content: 'Blog', value: 'Blog' },
-    { content: 'Contact', value: 'Contact' }
+    { menuLabel: 'Home', value: 'Home' },
+    { menuLabel: 'About', value: 'About' },
+    { menuLabel: 'Service', value: 'Service', selected: true },
+    { menuLabel: 'Blog', value: 'Blog' },
+    { menuLabel: 'Contact', value: 'Contact' }
   ]
-  
+
+  getEmitData(data: any) {
+    console.log('data from menu - ', data);
+  }
+
 }

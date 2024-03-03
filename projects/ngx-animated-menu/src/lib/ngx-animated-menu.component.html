@@ -1,8 +1,14 @@
-<div id="{{parentContainerId}}" class="nam-menu-container" #namMainContainer>
-    <div class="nam-menu-element-container" #namMainEleCnt>
-        <div class="nam-active-indicator" #namIndicatorDom></div>
-        <ng-container>
-            <div *ngFor="let val of menuData; let i= index" (click)="namUpdateActiveMenuBar(i)" class="nam-menu-element" #namDynamicElements [innerHTML]="val.content"></div>
-        </ng-container>
-    </div>
+<div id="{{ parentContainerId }}" class="nam-menu-container" #namMainContainer>
+  <div class="nam-menu-element-container" #namMainEleCnt>
+    <div class="nam-active-indicator" #namIndicatorDom></div>
+    <ng-container>
+      <div
+        *ngFor="let val of _menuData; let i = index"
+        (click)="namUpdateActiveMenuBar(i, true)"
+        class="nam-menu-element"
+        #namDynamicElements
+        [innerHTML]="val.menuLabel"
+      ></div>
+    </ng-container>
+  </div>
 </div>

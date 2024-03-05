@@ -22,7 +22,6 @@ export class NgxAnimatedMenuComponent {
 		let key = 0;
 		this._menuData = [...value];
 		value.forEach((val: any) => {
-			console.log('val', val);
 			if (val.hasOwnProperty('selected') && val.selected) {
 				this.curMenuEle = key;
 			}

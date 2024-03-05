@@ -1,6 +1,48 @@
-<ngx-animated-menu
-  (menuEmitData)="getEmitData($event)"
-  [configData]="configData"
-  [menuData]="menuData"
-></ngx-animated-menu>
+<div class="main-container">
+  <div class="main-header">
+    <div class="heading-title">
+      <h1>ngx-animated-menu</h1>
+      <span>0.0.5</span>
+    </div>
+  </div>
+  <div class="contnet-holder">
+    <div class="config-title">
+      <h2>Examples :</h2>
+    </div>
+
+    <div class="example-container">
+      <h2>Default Menu :</h2>
+      <div class="demo-exp-container">example come here</div>
+      <div class="opt-container">
+        <div class="opt-holder">
+          <div class="opt-title">ConfigData</div>
+          <div class="jsonDisplay">
+            <pre>{{ configData | json }}</pre>
+          </div>
+        </div>
+        <div class="opt-holder">
+          <div class="opt-title">MenuData</div>
+          <div class="jsonDisplay">
+            <pre>{{ defaultMenuData | json }}</pre>
+          </div>
+        </div>
+      </div>
+      <div class="menu-lib-container">meni lib</div>
+    </div>
+
+    <!-- <div class="examp-01">
+      <h2>Default Menu :</h2>
+      <div class="opt-holder-container">
+        
+      </div>
+
+      <ngx-animated-menu
+        (menuEmitData)="getEmitData($event)"
+        [configData]="configData"
+        [menuData]="defaultMenuData"
+      ></ngx-animated-menu>
+    </div> -->
+  </div>
+</div>
+
 <!-- <i class="gg-home"></i> -->

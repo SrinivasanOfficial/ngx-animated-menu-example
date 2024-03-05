@@ -12,10 +12,10 @@ export class AppComponent {
     menuColor: '#d523c8'
   }
 
-  menuData = [
+  defaultMenuData = [
     { menuLabel: 'Home', value: 'Home' },
     { menuLabel: 'About', value: 'About' },
-    { menuLabel: 'Service', value: 'Service', selected: true },
+    { menuLabel: 'Service', value: 'Service' },
     { menuLabel: 'Blog', value: 'Blog' },
     { menuLabel: 'Contact', value: 'Contact' }
   ]

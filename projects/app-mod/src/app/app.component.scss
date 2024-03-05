@@ -1,1 +1,77 @@
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/home.css');
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/home.css");
+
+.main-container {
+  width: 80vw;
+  height: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .main-header {
+    margin: 30px 0;
+    padding: 6px;
+    display: flex;
+    height: 100px;
+    background-color: #00b8ff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .heading-title {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+
+    span {
+      line-height: 45px;
+    }
+  }
+
+  .contnet-holder {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .config-opt {
+      display: flex;
+      //justify-content: space-between;
+
+      p {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  .jsonDisplay {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #333;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+
+    .opt-container {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+
+      .opt-holder {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

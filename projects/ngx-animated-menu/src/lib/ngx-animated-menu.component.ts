@@ -54,7 +54,8 @@ export class NgxAnimatedMenuComponent {
 	}
 
 	namGetMenuElementDetails() {
-		this.namMainEleCnt.first.nativeElement.style.setProperty('--background-color', this._defConfigData.menuColor)
+		this.namMainEleCnt.first.nativeElement.style.setProperty('--background-color', this._defConfigData.menuColor);
+		this.namMainEleCnt.first.nativeElement.style.color = this._defConfigData.indicatorColor;
 		this.menuEleDet = [];
 		this.namDynamicElements.forEach(element => {
 			this.menuEleDet.push({

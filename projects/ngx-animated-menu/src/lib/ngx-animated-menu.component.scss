@@ -1,65 +1,64 @@
 .nam-menu-container {
+  display: flex;
+
+  --background-color: #4c64f5;
+  --indicator-color: #ffffff;
+
+  .nam-menu-element-container {
+    justify-content: space-evenly;
+    background-color: var(--background-color);
+    color: var(--indicator-color);
+    align-items: center;
     display: flex;
+    flex: 1;
+    padding: 0 15px;
+    position: relative;
+  }
 
-    --background-color : #4c64f5;
-    --indicator-color : #ffffff;
+  .nam-menu-element {
+    position: relative;
+    color: #000000;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
 
+  .nam-active-indicator {
+    position: absolute;
+    width: 100px;
+    height: calc(100% - 5px);
+    background-color: var(--indicator-color);
+    bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: all 0.25s;
+  }
 
-    .nam-menu-element-container {
-        justify-content: space-evenly;
-        background-color: var(--background-color);
-        color:var(--indicator-color);
-        align-items: center;
-        display: flex;
-        flex: 1;
-        padding: 0 15px;
-        position: relative;
-    }
+  .nam-active-indicator:before {
+    // content: attr(data-content);
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 15px;
+    height: 15px;
+    left: -15px;
+    background: transparent;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 0 5px;
+  }
 
-    .nam-menu-element {
-        position: relative;
-        color: #000000;
-        padding: 15px;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-    }
-
-    .nam-active-indicator {
-        position: absolute;
-        width: 100px;
-        height: calc(100% - 5px);
-        background-color: var(--indicator-color);
-        bottom: 0px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        transition: all 0.25s;
-    }
-
-    .nam-active-indicator:before {
-        // content: attr(data-content);
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        width: 15px;
-        height: 15px;
-        left: -15px;
-        background: transparent;
-        border-bottom-right-radius: 15px;
-        box-shadow: 5px 5px 0 5px;
-    }
-
-    .nam-active-indicator:after {
-        // content: attr(data-content);
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        width: 15px;
-        height: 15px;
-        right: -15px;
-        background: transparent;
-        border-bottom-left-radius: 15px;
-        box-shadow: -5px 5px 0 5px;
-    }
+  .nam-active-indicator:after {
+    // content: attr(data-content);
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 15px;
+    height: 15px;
+    right: -15px;
+    background: transparent;
+    border-bottom-left-radius: 15px;
+    box-shadow: -5px 5px 0 5px;
+  }
 }

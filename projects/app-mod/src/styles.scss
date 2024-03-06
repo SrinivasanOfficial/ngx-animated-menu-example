@@ -5,3 +5,10 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+.menu-cls {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+}

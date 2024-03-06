@@ -1,27 +1,89 @@
-# App001
+# ngx-animated-menu
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Angular animated menu library, a sleek and dynamic solution to enhance user interaction in web and app interfaces. With a collection of captivating animations and smooth transitions, our library offers a visually appealing way to navigate through menus, creating a seamless and engaging user experience. Whether you're designing a website or a mobile application, our animated menu library adds an extra layer of polish and interactivity to elevate your project to the next level
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Menu Indicator Animating to selected Menu
+- Responsive Design
+- Custom Color Option
+- Dynamic String & Html Content
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[https://srinivasanofficial.github.io/ngx-animated-menu-demo/](https://srinivasanofficial.github.io/ngx-animated-menu-demo/)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install ngx-animated-menu via:
 
-## Running unit tests
+```bash
+  npm i ngx-animated-menu
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Once installed you need to import our main module in your application module:
 
-## Running end-to-end tests
+```bash
+  import { NgxAnimatedMenuModule } from 'ngx-animated-menu';
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  @NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    NgxAnimatedMenuModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+<ngx-animated-menu
+          (menuEmitData)="getEmitData($event)"
+          [configData]="configData"
+          [menuData]="menuData"
+></ngx-animated-menu>
+```
+
+#### @Input menuData
+
+| Parameter             | Type                     | Default Value |
+| :-------------------- | :----------------------- | :------------ |
+| `menuLabel`           | `String or HTML content` |               |
+| `value`               | `String or HTML content` |               |
+| `selected` (optional) | `boolean`                | true          |
+
+```
+[
+    { menuLabel: 'Home', value: 'Home' },
+    { menuLabel: 'About', value: 'About' },
+    { menuLabel: 'Service', value: 'Service' },
+    { menuLabel: 'Blog', value: 'Blog' },
+    { menuLabel: 'Contact', value: 'Contact' }
+]
+```
+
+#### @Input configData (Optional)
+
+| Parameter        | Type             | Default Value |
+| :--------------- | :--------------- | :------------ |
+| `menuColor`      | `Hex Color code` | '#4c64f5 '    |
+| `indicatorColor` | `Hex Color code` | '#ffffff'     |
+
+```
+{
+    menuColor: '#4c64f5',
+    indicatorColor: '#ffffff'
+}
+```
+
+## Authors
+
+- [@SrinivasanOfficial](https://github.com/orgs/SrinivasanOfficial)
+
+## Contributing
+
+I am very appreciate for your ideas, proposals and found bugs which you can leave in github issues. Thanks in advance!

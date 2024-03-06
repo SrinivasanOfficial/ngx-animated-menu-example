@@ -12,14 +12,19 @@
 
     <div class="example-container">
       <h2>Default Menu :</h2>
-      <div class="demo-exp-container">example come here</div>
+      <div class="demo-exp-container">
+        <ngx-animated-menu
+          (menuEmitData)="getEmitData($event)"
+          [menuData]="defaultMenuData"
+        ></ngx-animated-menu>
+      </div>
       <div class="opt-container">
-        <div class="opt-holder">
+        <!-- <div class="opt-holder">
           <div class="opt-title">ConfigData</div>
           <div class="jsonDisplay">
             <pre>{{ configData | json }}</pre>
           </div>
-        </div>
+        </div> -->
         <div class="opt-holder">
           <div class="opt-title">MenuData</div>
           <div class="jsonDisplay">
@@ -27,22 +32,80 @@
           </div>
         </div>
       </div>
-      <div class="menu-lib-container">meni lib</div>
+      <div class="menu-lib-container">
+        <div class="jsonDisplay">
+          <pre>{{ menuLib01 }}</pre>
+        </div>
+      </div>
     </div>
 
-    <!-- <div class="examp-01">
-      <h2>Default Menu :</h2>
-      <div class="opt-holder-container">
-        
+    <div class="example-container">
+      <h2>Menu with custom color :</h2>
+      <div
+        class="demo-exp-container"
+        style="height: 100px; background-color: #e7e7e7"
+      >
+        <ngx-animated-menu
+          (menuEmitData)="getEmitData($event)"
+          [configData]="configData02"
+          [menuData]="menuData02"
+        ></ngx-animated-menu>
       </div>
+      <div class="opt-container">
+        <div class="opt-holder">
+          <div class="opt-title">ConfigData</div>
+          <div class="jsonDisplay">
+            <pre>{{ configData02 | json }}</pre>
+          </div>
+        </div>
+        <div class="opt-holder">
+          <div class="opt-title">MenuData</div>
+          <div class="jsonDisplay">
+            <pre>{{ menuData02 | json }}</pre>
+          </div>
+        </div>
+      </div>
+      <div class="menu-lib-container">
+        <div class="jsonDisplay">
+          <pre>{{ menuLib01 }}</pre>
+        </div>
+      </div>
+    </div>
 
-      <ngx-animated-menu
-        (menuEmitData)="getEmitData($event)"
-        [configData]="configData"
-        [menuData]="defaultMenuData"
-      ></ngx-animated-menu>
-    </div> -->
+    <div class="example-container">
+      <h2>Menu with Custom Select :</h2>
+      <div
+        class="demo-exp-container"
+        style="height: 100px; background-color: #e7e7e7"
+      >
+        <ngx-animated-menu
+          (menuEmitData)="getEmitData($event)"
+          [configData]="configData03"
+          [menuData]="menuData03"
+        ></ngx-animated-menu>
+      </div>
+      <div class="opt-container">
+        <div class="opt-holder">
+          <div class="opt-title">ConfigData</div>
+          <div class="jsonDisplay">
+            <pre>{{ configData03 | json }}</pre>
+          </div>
+        </div>
+        <div class="opt-holder">
+          <div class="opt-title">MenuData</div>
+          <div class="jsonDisplay">
+            <pre>{{ menuData03 | json }}</pre>
+          </div>
+        </div>
+      </div>
+      <div class="menu-lib-container">
+        <div class="jsonDisplay">
+          <pre>{{ menuLib01 }}</pre>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="footer"></div>
 </div>
 
 <!-- <i class="gg-home"></i> -->

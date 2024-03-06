@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgxAnimatedMenuModule } from '../../../ngx-animated-menu/src/lib/ngx-animated-menu.module';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import { NgxAnimatedMenuModule } from 'ngx-animated-menu';
 
 @NgModule({
   declarations: [

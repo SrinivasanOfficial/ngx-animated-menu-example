@@ -1,6 +1,24 @@
 {
   "name": "ngx-animated-menu",
-  "version": "0.0.5",
+  "version": "0.0.7",
+  "keywords": [
+    "ng",
+    "ngx",
+    "angular",
+    "ngx-animated-menu",
+    "menu",
+    "animated",
+    "responsive"
+  ],
+  "description": "Angular animated menu library, a sleek and dynamic solution to enhance user interaction in web and app interfaces. With a collection of captivating animations and smooth transitions, our library offers a visually appealing way to navigate through menus, creating a seamless and engaging user experience. Whether you're designing a website or a mobile application, our animated menu library adds an extra layer of polish and interactivity to elevate your project to the next level",
+  "author": "@SrinivasanOfficial <https://github.com/orgs/SrinivasanOfficial>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrinivasanOfficial/ngx-animated-menu-example"
+  },
+  "bugs": {
+    "url": "https://github.com/SrinivasanOfficial/ngx-animated-menu-example/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^17.2.0",
     "@angular/core": "^17.2.0"

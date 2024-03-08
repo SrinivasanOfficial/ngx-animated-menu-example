@@ -80,6 +80,10 @@ Once installed you need to import our main module in your application module:
 }
 ```
 
+#### @Output menuEmitData (Optional)
+
+Emit the current Array of data when clicking the corresponding Menu
+
 ## Authors
 
 - [@SrinivasanOfficial](https://github.com/orgs/SrinivasanOfficial)

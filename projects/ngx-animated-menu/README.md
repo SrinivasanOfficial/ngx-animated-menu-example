@@ -53,7 +53,7 @@ Once installed you need to import our main module in your application module:
 | Parameter             | Type                     | Default Value |
 | :-------------------- | :----------------------- | :------------ |
 | `menuLabel`           | `String or HTML content` |               |
-| `value`               | `String or HTML content` |               |
+| `value`               | `any`                    |               |
 | `selected` (optional) | `boolean`                | true          |
 
 ```

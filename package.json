@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
     "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@ng-icons/ionicons": "^27.3.1",
     "angular-font-awesome": "^3.1.2",
     "font-awesome": "^4.7.0",
     "ngx-animated-menu": "^0.0.6",

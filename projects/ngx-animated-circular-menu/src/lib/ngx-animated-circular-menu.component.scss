@@ -1,0 +1,44 @@
+.nacm-main-holder {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nacm-center-menu {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    cursor: pointer;
+    transition: transform 1000ms;
+  }
+
+  .nacm-icon-rotate {
+    transform: rotate(360deg);
+  }
+
+  .nacm-icons {
+    position: absolute;
+    list-style: none;
+    transform-origin: 100px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transform: rotate(0deg) rotateX(0deg);
+    transition: all 500ms;
+  }
+}

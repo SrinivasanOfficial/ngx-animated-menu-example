@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
 import { NgxAnimatedMenuModule } from 'ngx-animated-menu';
+import { NgxAnimatedCircularMenuModule } from '../../../ngx-animated-circular-menu/src/public-api';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { NgxAnimatedMenuModule } from 'ngx-animated-menu';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    MatIconModule,
     NgxAnimatedMenuModule,
-    MatIconModule
+    NgxAnimatedCircularMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

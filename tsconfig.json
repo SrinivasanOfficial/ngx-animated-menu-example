@@ -11,6 +11,9 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
+      "ngx-animated-circular-menu": [
+        "./dist/ngx-animated-circular-menu"
+      ],
       "ngx-animated-menu": [
         "./dist/ngx-animated-menu"
       ]

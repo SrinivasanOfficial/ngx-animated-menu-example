@@ -1,0 +1,14 @@
+<div
+  [style.width.px]="menuWidthHeight"
+  [style.height.px]="menuWidthHeight"
+  class="nacm-main-holder"
+>
+  <div #nacmCenterMenuRef (click)="namcRotateIcon()" class="nacm-center-menu">
+    <i class="gg-menu"></i>
+  </div>
+  <ng-container *ngFor="let val of menuData">
+    <li #nacmMenuListRef class="nacm-icons">
+      <a #nacmMenuIconRef [innerHTML]="val.content"></a>
+    </li>
+  </ng-container>
+</div>
